@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/iconPage.jpg" type="image/x-icon" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+  </head>
+  <body>
+    <section id="load" class="d-flex justify-content-center align-items-center">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </section>
+    <!--  start slideBar  -->
+    <section>
+      <div class="nav-tab-meun">
+        <ul class="nav flex-column ps-5 overflow-hidden mb-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" data="movie/now_playing">Now playing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data="trending/all/day">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data='movie/top_rated'>Top Rated</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data="trending/all/week">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data="movie/upcoming">Upcoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <div class="nav-social-item">
+          <a href="#" class="ps-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="ps-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="ps-3"><i class="fas fa-globe"></i></a>
+          <div class="pt-3">
+            <span class="text-muted"
+              >Copyright Â© 2019 All Rights Reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="strip-header-nav">
+        <div class="strip-logo py-3">
+          <img src="images/logo.png" alt="" srcset="" />
+        </div>
+        <div
+          class="strip-toggle-meun position-absolute top-50 start-50 translate-middle p-3 fs-4"
+        >
+          <i class="fa fa-align-justify"></i>
+        </div>
+        <div class="strip-social-icon">
+          <div class="strip-globe">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="strip-share pt-4">
+            <i class="fas fa-share-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  end slideBar  -->
+    <!--  start home  -->
+    <section class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input
+              id="allMovies"
+              class="form-control mb-5"
+              placeholder="get movies by word..."
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input id="word" class="form-control" placeholder="search..." />
+          </div>
+        </div>
+      </div>
+      <!-- <section class="container text-center  ">
+        <div  class="row" id="res">
+        </div>
+      </section> -->
+      <section class="container text-center my-1 py-2 ">
+        <div class="row gy-4" id="rowData">
+
+        </div>
+      </section>
+    </section>
+<!-- start contact Us -->
+<section id="contact" class="py-3 my-4">
+  <div class="container">
+    <h2 class="my-4 text-light">ContacUs...</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input type="text" class="form-control" name="" id="name" placeholder="Enter your Name" >
+          <div class="alert alert-danger" id="alertName" role="alert">
+            Your Name is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input type="email" class="form-control" name="" id="Email" placeholder="Enter your Email" >
+          <div class="alert alert-danger" id="alertEmail" role="alert">
+            Your Email is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input type="number" class="form-control" name="" id="phone" placeholder="Enter your Phone" >
+          <div class="alert alert-danger" id="alertPhone" role="alert">
+            Your Phone is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input type="text" class="form-control" name="" id="age" placeholder="Enter your Age" >
+          <div class="alert alert-danger" id="alertAge" role="alert">
+            Your Age is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input type="password" class="form-control" name="" id="password" placeholder="Enter your Password" >
+          <div class="alert alert-danger" id="alertPassword" role="alert">
+            Your Password is not valid
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="form-group">
+          <input type="password" class="form-control" name="" id="repassword" placeholder="Enter your Repassword" >
+          <div class="alert alert-danger" id="alertRepassword" role="alert">
+            Your Repassword is not valid
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" disabled id="submitBtn" class="btn btn-outline-danger">Submit</button>
+  </div>
+
+</section>
+<!-- end contact Us -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
